@@ -26,7 +26,7 @@ const Header = () => {
   const handleLogout = () => {
     try {
       dispatch(authActions.logout());
-      alert("Logged out! Hope to see you soon!");
+      alert("Logged out!");
       navigate("/login");
     } catch (error) {
       console.log(error);
