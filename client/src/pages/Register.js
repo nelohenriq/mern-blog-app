@@ -23,10 +23,9 @@ const Register = () => {
 
   // handle form submit
   const handleSubmit = async (e) => {
-    const proxy = "https://lthi9o-8080.csb.app";
     e.preventDefault();
     try {
-      const { data } = await axios.post(`${proxy}/api/v1/user/register`, {
+      const { data } = await axios.post("/api/v1/user/register", {
         username: inputs.name,
         email: inputs.email,
         password: inputs.password,
